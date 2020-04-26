@@ -1,0 +1,32 @@
+<div class="slider_books img-fluid">
+    <div class=" mb-5 mask text-white">
+        <div class="container d-flex flex-column align-items-center justify-content-center h-100">
+          <h1 class="display-3">CCS</h1>
+          <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum rerum sint illo corrupti laboriosam soluta quibusdam enim impedit eaque blanditiis tempore nulla quos nisi dolor numquam, iusto fugit eius officiis. Ea voluptas nesciunt accusantium voluptate facilis? Error nihil quasi labore, ducimus eligendi dolores ullam fugiat? Suscipit neque dolores odio asperiores.
+          </p>
+          <hr class="container bg-white">
+        </div>
+    </div>
+</div>
+<!-- Card's -->
+<div class="container">
+    <h2 class="display-4 text-center my-5 pt-5">Notas</h2>
+  </div>
+   <div class="container mb-5" id="cards" >
+     <div class="row">
+       <div class="col-md-4 my-3" *ngFor="let nota of notas, index as i">
+           <div class="card" style="width: 18rem;" >
+               <div class="card-body">
+                 <h5 class="ml-2 card-title">{{nota.titulo}}</h5>
+                 <p class="ml-2 card-subtitle  text-muted font-italic">{{nota.fecha}}</p>
+                 <hr>
+                 <p class=" ml-2 card-text texto-card mt-2" id="card_1">
+                  {{nota.contenido.substring(0,250)}}
+                 </p>
+                 <a [routerLink]="['/nota',nota.id]" class="card-link" id="leer_1">Leer mas...</a>
+               </div>
+             </div>
+       </div>  
+     </div>            
+   </div>

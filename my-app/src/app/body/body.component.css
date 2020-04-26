@@ -1,0 +1,23 @@
+.slider_books{
+    background: url('../Images/slider_notes.jpg') center center no-repeat fixed;
+    width: 100%;
+    height: 100%;
+
+}
+.mask{
+    background: rgba(0, 0, 0, 0.507);
+    height: 100vh;
+    width: 100%;
+}
+.text_area_s{
+    height: 200px;
+    border: none;
+    padding: 10px;
+
+}
+textarea:active{
+    border: none;
+}
+.texto-card{
+    height: 200px;
+}
